@@ -54,6 +54,11 @@ export class BotService   {
         var urls = [url1, url2, url3];
 
         var calls=[];
+        
+        const headersRequest = {
+            'accept': 'application/json', // afaik this one is not needed
+            'Accept-Language': `hi_IN`
+        };
 
         urls.forEach(url => {
           
