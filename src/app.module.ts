@@ -12,7 +12,9 @@ import {BotService} from './modules/telegram/telegram.service';
     ScheduleModule.forRoot(),
     HttpModule.register({
       headers: {'accept': 'application/json', 
-      'Accept-Language': `hi_IN`} // object of headers you want to set
+      'Accept-Language': `hi_IN`,
+      'Content-Type': 'application/x-www-form-urlencoded'
+    } // object of headers you want to set
     })
   ],
   controllers: [AppController,TeliGram],
